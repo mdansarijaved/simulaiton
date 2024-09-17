@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lift Simulation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/CSS/styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <button class="button-back" id="back-button"><-- Back</button>
+      <form action="" class="form" id="form">
+        <div class="field">
+          <label for="add-floor" class="label">Floor count: </label>
+          <input
+            type="number"
+            class="input"
+            id="add-floor"
+            name="add-floor"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="add-lift" class="label">Lift count: </label>
+          <input
+            type="number"
+            class="input"
+            id="add-lift"
+            name="add-lift"
+            required
+          />
+        </div>
+        <span class="error" id="error"></span>
+        <div class="buttons">
+          <button class="button">Generate</button>
+        </div>
+      </form>
+      <div id="Simulation" class="Simulation"></div>
+    </div>
+    <script src="/src/js/index.js"></script>
+  </body>
+</html>
